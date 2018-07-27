@@ -20,13 +20,14 @@ import java.io.IOException;
 @Slf4j
 public class DataServiceImpl implements IDataService {
 
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+//    private RestTemplate restTemplate;
 
     @Override
     public WeatherResponse getWeatherByCityName(String cityName) {
         try {
             String url = "http://wthrcdn.etouch.cn/weather_mini?city=" + cityName;
+            RestTemplate restTemplate = new RestTemplate();
             ResponseEntity<String> respString = restTemplate.getForEntity(url, String.class);
             ObjectMapper mapper = new ObjectMapper();
             WeatherResponse resp = mapper.readValue(respString.getBody(), WeatherResponse.class);

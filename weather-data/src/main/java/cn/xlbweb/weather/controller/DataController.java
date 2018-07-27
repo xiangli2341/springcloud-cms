@@ -22,6 +22,7 @@ public class DataController {
 
     @GetMapping("/cityName/{cityName}")
     public WeatherResponse getWeatherByCityName(@PathVariable("cityName") String cityName) {
+        // todo 乱码
         return iDataService.getWeatherByCityName(cityName);
     }
 }
