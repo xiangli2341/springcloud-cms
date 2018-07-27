@@ -9,11 +9,11 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * @date: 2018/7/27 14:49
  * @description:
  */
-@SpringBootApplication
 @EnableEurekaServer
-public class WeatherEurekaApplication {
+@SpringBootApplication
+public class WeatherDataApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WeatherEurekaApplication.class, args);
+        SpringApplication.run(WeatherDataApplication.class, args);
     }
 }

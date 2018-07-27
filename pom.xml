@@ -9,6 +9,8 @@
     <modules>
         <module>weather-eureka</module>
         <module>weather-client</module>
+        <module>weather-city</module>
+        <module>weather-data</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -49,6 +51,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
