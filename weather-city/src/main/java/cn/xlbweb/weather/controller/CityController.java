@@ -1,7 +1,6 @@
 package cn.xlbweb.weather.controller;
 
 import cn.xlbweb.weather.service.ICityService;
-import cn.xlbweb.weather.vo.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +21,7 @@ public class CityController {
     private ICityService iCityService;
 
     @GetMapping("/list")
-    public List<City> listCity() {
+    public List<String> listCity() {
         return iCityService.listCity();
     }
 }

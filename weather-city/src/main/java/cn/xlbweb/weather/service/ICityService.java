@@ -1,7 +1,5 @@
 package cn.xlbweb.weather.service;
 
-import cn.xlbweb.weather.vo.City;
-
 import java.util.List;
 
 /**
@@ -16,5 +14,5 @@ public interface ICityService {
      *
      * @return
      */
-    List<City> listCity();
+    List<String> listCity();
 }
