@@ -1,6 +1,6 @@
-package cn.xlbweb.weather.controller;
+package cn.xlbweb.cms.controller;
 
-import cn.xlbweb.weather.service.IOrderService;
+import cn.xlbweb.cms.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,18 +10,18 @@ import java.util.List;
 
 /**
  * @author: bobi
- * @date: 2018/7/27 16:24
+ * @date: 2018/7/27 14:49
  * @description:
  */
 @RestController
-@RequestMapping("/order")
-public class OrderController {
+@RequestMapping("/product")
+public class ProductController {
 
     @Autowired
-    private IOrderService iOrderService;
+    private IProductService iProductService;
 
     @GetMapping("/list")
     public List<String> list() {
-        return iOrderService.list();
+        return iProductService.list();
     }
 }

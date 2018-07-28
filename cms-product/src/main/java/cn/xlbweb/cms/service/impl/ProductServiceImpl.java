@@ -1,6 +1,6 @@
-package cn.xlbweb.weather.service.impl;
+package cn.xlbweb.cms.service.impl;
 
-import cn.xlbweb.weather.service.IProductService;
+import cn.xlbweb.cms.service.IProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

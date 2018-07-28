@@ -1,16 +1,16 @@
-package cn.xlbweb.weather.service;
+package cn.xlbweb.cms.service;
 
 import java.util.List;
 
 /**
  * @author: bobi
- * @date: 2018/7/27 14:58
+ * @date: 2018/7/27 16:25
  * @description:
  */
-public interface IProductService {
+public interface IOrderService {
 
     /**
-     * 查询所有商品数据
+     * 查询所有订单数据
      *
      * @return
      */

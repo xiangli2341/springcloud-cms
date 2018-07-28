@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: weather-eureka
+    name: cms-eureka
 
 eureka:
   instance:
