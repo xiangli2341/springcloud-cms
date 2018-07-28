@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.xlbweb</groupId>
-    <artifactId>springcloud-weather</artifactId>
+    <artifactId>springcloud-cms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>weather-eureka</module>
-        <module>weather-client</module>
-        <module>weather-city</module>
-        <module>weather-data</module>
+        <module>cms-eureka</module>
+        <module>cms-client</module>
+        <module>cms-product</module>
+        <module>cms-order</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>springcloud-weather</name>
+    <name>springcloud-cms</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
