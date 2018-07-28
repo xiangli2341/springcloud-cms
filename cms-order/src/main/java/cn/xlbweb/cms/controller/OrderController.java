@@ -1,5 +1,6 @@
 package cn.xlbweb.cms.controller;
 
+import cn.xlbweb.cms.client.ProductClient;
 import cn.xlbweb.cms.service.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -28,6 +29,9 @@ public class OrderController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private ProductClient productClient;
 
     @GetMapping("/list")
     public List<String> list() {
@@ -62,5 +66,10 @@ public class OrderController {
     public String test3() {
         String response = restTemplate.getForObject("http://CMS-PRODUCT//product/list", String.class);
         return response;
+    }
+
+    @GetMapping("/test4")
+    public String test4() {
+        return productClient.list();
     }
 }
