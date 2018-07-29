@@ -1,6 +1,5 @@
 server:
   port: 8083
-
 spring:
   application:
     name: cms-config
@@ -11,7 +10,6 @@ spring:
             uri: https://gitee.com/bobi1234/config-repo
             username: bobi1234
             password: abc222222
-
 eureka:
   client:
     service-url:

@@ -1,10 +1,8 @@
 server:
   port: 8080
-
 spring:
   application:
     name: cms-client
-
 eureka:
   client:
     service-url:
