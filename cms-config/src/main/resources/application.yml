@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: cms-config
+  cloud:
+      config:
+        server:
+          git:
+            uri: https://gitee.com/bobi1234/config-repo
+            username: bobi1234
+            password: abc222222
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: cms-config
