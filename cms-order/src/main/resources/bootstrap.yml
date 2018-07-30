@@ -5,4 +5,8 @@ spring:
       discovery:
         enabled: true
         service-id: CMS-CONFIG
+      uri: http://localhost:8083/
+      label: master
       profile: dev
+  application:
+    name: cms-order

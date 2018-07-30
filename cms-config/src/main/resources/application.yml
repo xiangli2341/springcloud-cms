@@ -8,8 +8,9 @@ spring:
         server:
           git:
             uri: https://gitee.com/bobi1234/config-repo
-            username: bobi1234
-            password: abc222222
+            basedir: D:\basedir
+#            username: bobi1234
+#            password: ********
 eureka:
   client:
     service-url:
