@@ -1,5 +1,7 @@
 package cn.xlbweb.cms.service;
 
+import cn.xlbweb.cms.entity.Order;
+
 import java.util.List;
 
 /**
@@ -14,5 +16,5 @@ public interface IOrderService {
      *
      * @return
      */
-    List<String> list();
+    List<Order> list();
 }

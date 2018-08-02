@@ -1,6 +1,7 @@
 package cn.xlbweb.cms.controller;
 
 import cn.xlbweb.cms.client.ProductClient;
+import cn.xlbweb.cms.entity.Order;
 import cn.xlbweb.cms.service.IOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -34,7 +35,7 @@ public class OrderController {
     private ProductClient productClient;
 
     @GetMapping("/list")
-    public List<String> list() {
+    public List<Order> list() {
         return iOrderService.list();
     }
 

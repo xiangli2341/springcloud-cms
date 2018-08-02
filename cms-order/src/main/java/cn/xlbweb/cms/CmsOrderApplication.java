@@ -11,8 +11,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @description:
  */
 @SpringBootApplication
-@EnableDiscoveryClient
-@EnableFeignClients(basePackages = "cn.xlbweb.cms.client")
+//@EnableDiscoveryClient
+//@EnableFeignClients(basePackages = "cn.xlbweb.cms.client")
 public class CmsOrderApplication {
 
     public static void main(String[] args) {

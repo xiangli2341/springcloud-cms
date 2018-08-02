@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/yml")
 public class YmlController {
 
-    @Value("${env}")
-    private String env;
-
-    @GetMapping("/env")
-    public String getEnv() {
-        return env;
-    }
+//    @Value("${env}")
+//    private String env;
+//
+//    @GetMapping("/env")
+//    public String getEnv() {
+//        return env;
+//    }
 }

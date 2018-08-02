@@ -1,7 +1,10 @@
 package cn.xlbweb.cms.service.impl;
 
+import cn.xlbweb.cms.entity.Order;
+import cn.xlbweb.cms.repository.OrderRepository;
 import cn.xlbweb.cms.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,14 +19,11 @@ import java.util.List;
 @Slf4j
 public class OrderServiceImpl implements IOrderService {
 
+    @Autowired
+    private OrderRepository orderRepository;
+
     @Override
-    public List<String> list() {
-        List<String> list = new ArrayList<>();
-        list.add("00001");
-        list.add("00002");
-        list.add("00003");
-        list.add("00004");
-        list.add("00005");
-        return list;
+    public List<Order> list() {
+        return orderRepository.findAll();
     }
 }
