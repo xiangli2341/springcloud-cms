@@ -21,7 +21,7 @@ public class Order {
      * 订单id
      */
     @Id
-    private Integer id;
+    private String id;
     /**
      * 实付金额
      */
@@ -29,7 +29,7 @@ public class Order {
     /**
      * 支付类型:1微信支付 2支付宝支付
      */
-    private Integer payment_type;
+    private Integer paymentType;
     /**
      * 邮费
      */
@@ -37,7 +37,7 @@ public class Order {
     /**
      * 状态:1未付款 2已付款 3未发货 4已发货 5交易成功 6交易关闭
      */
-    private String status;
+    private int status;
     /**
      * 订单创建时间
      */
