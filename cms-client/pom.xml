@@ -6,17 +6,27 @@
         <groupId>cn.xlbweb</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>cms-client</artifactId>
-
     <name>cms-client</name>
+    <description>Eureka Server 注册中心客户端</description>
     <url>http://www.example.com</url>
 
     <properties>
     </properties>
 
     <dependencies>
+        <!--需加上此依赖,否则启动就停止报错-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
