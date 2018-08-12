@@ -10,8 +10,10 @@ spring:
           git:
             uri: https://gitee.com/bobi1234/config-repo
             basedir: D:\basedir
+# 私密仓库才需要账号密码
 #            username: bobi1234
 #            password: ********
+
 eureka:
   client:
     service-url:

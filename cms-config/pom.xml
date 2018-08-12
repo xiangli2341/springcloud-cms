@@ -10,18 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cms-config</artifactId>
     <name>cms-config</name>
-    <description>Config Server 统一配置中心服务端,同时也是一个注册中心客户端</description>
+    <description>注册中心客户端,统一配置中心服务端</description>
     <url>http://www.example.com</url>
 
     <properties>
     </properties>
 
     <dependencies>
+        <!--注册中心客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!--统一配置中心服务端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>

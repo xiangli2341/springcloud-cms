@@ -1,0 +1,44 @@
+#server:
+#  port: 8082
+#
+#spring:
+#  application:
+#    name: cms-order
+#  # 数据库连接配置
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql:///db_springcloud-cms?characterEncoding=utf-8&useSSL=false
+#  jpa:
+#    show-sql: true
+#  # 配置中心客户端
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: CMS-CONFIG
+#      uri: http://localhost:8083/
+#      profile: dev
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+
+# 以上数据库配置信息从Gitee上的仓库拿取出来
+server:
+  port: 8082
+
+spring:
+  application:
+    # 注意:配置文件拼接规则为此处的name-profile值,即:cms-order-dev.yml
+    name: cms-order
+  # 配置中心客户端
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CMS-CONFIG
+      profile: dev
+
