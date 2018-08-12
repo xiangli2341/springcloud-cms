@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cms-client</artifactId>
     <name>cms-client</name>
-    <description>Eureka Server 注册中心客户端</description>
+    <description>Eureka Client 注册中心客户端</description>
     <url>http://www.example.com</url>
 
     <properties>

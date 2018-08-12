@@ -1,20 +1,10 @@
-# todo have bug... 这里要做的是把order模块的配置文件通过配置中心从git上拉下来,而不是在这里写.....
-#spring:
-#  cloud:
-#    config:
-#      discovery:
-#        enabled: true
-#        service-id: CMS-CONFIG
-#      uri: http://localhost:8083/
-#      label: master
-#      profile: dev
-#  application:
-#    name: cms-order
-
 server:
   port: 8082
 
 spring:
+  application:
+    name: cms-order
+  # 数据库连接配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -22,3 +12,8 @@ spring:
     url: jdbc:mysql:///db_springcloud-cms?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

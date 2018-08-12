@@ -1,5 +1,6 @@
 server:
   port: 8083
+
 spring:
   application:
     name: cms-config
@@ -15,5 +16,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: cms-config

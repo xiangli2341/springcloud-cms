@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cms-product</artifactId>
     <name>cms-product</name>
+    <description>Eureka Client 注册中心客户端</description>
     <url>http://www.example.com</url>
 
     <properties>

@@ -1,8 +1,10 @@
 server:
   port: 8761
+
 spring:
   application:
     name: cms-eureka
+
 eureka:
   instance:
     hostname: localhost
