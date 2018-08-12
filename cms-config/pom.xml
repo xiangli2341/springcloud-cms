@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cms-config</artifactId>
     <name>cms-config</name>
-    <description>注册中心客户端,统一配置中心服务端</description>
+    <description>注册中心客户端,统一配置中心服务端,消息总线集成RabbitMQ</description>
     <url>http://www.example.com</url>
 
     <properties>
@@ -27,6 +27,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+
+        <!--分布式配置中心Spring Cloud Bus消息总线集成RabbitMQ:用于对配置信息的实时更新-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
     </dependencies>
 
