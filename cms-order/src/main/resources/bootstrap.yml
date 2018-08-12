@@ -26,10 +26,7 @@
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka/
 
-# 以上数据库配置信息从Gitee上的仓库拿取出来
-server:
-  port: 8082
-
+# 以上端口,数据库连接配置以及注册中心客户端等配置信息都从Gitee上的仓库拉取出来
 spring:
   application:
     # 注意:配置文件拼接规则为此处的name-profile值,即:cms-order-dev.yml
