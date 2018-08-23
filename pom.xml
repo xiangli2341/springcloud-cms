@@ -22,6 +22,7 @@
         <module>cms-product</module>
         <module>cms-order</module>
         <module>cms-config</module>
+        <module>cms-test</module>
     </modules>
 
     <properties>
