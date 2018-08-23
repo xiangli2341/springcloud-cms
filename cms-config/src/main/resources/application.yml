@@ -8,7 +8,7 @@ spring:
       config:
         server:
           git:
-            uri: https://gitee.com/bobi1234/config-repo
+            uri: https://github.com/xiangli2341/CMS-config-repo
             basedir: D:\basedir
 # 私密仓库才需要账号密码
 #            username: bobi1234

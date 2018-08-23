@@ -53,7 +53,7 @@ public class CommunicationController {
 
     @GetMapping("/test3")
     public String test3() {
-        String response = restTemplate.getForObject("http://CMS-PRODUCT//product/list", String.class);
+        String response = restTemplate.getForObject("http://CMS-PRODUCT/product/list", String.class);
         return response;
     }
 
